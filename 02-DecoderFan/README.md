@@ -13,6 +13,8 @@ The goal of this project is to create a device that spins a fan at four discrete
  - 1x 3-6V Motor
  - 1x Breadboard Power Supply Module (3.3V/5V)
  - 1x 9V1A adapter
+ - Jumper wires
+ - Breadboard
 
 ## Wiring
 Note: The power supply module powers the motor through the L293D while the microcontroller powers the pushbuttons and LEDs.

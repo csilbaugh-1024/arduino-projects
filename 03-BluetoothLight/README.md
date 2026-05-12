@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/cbbd21ab-03ee-4aea-ac46-a8c04f5b3b5f
+
 # Bluetooth Wireless LED
 
 ## Project Goal
@@ -40,6 +44,7 @@ HC-05. It is a Bluetooth SPP (Serial Port Protocol) module that allows for wirel
 Though it may seem insignificant, static electricity can be very dangerous for the HC-05, which is not as well-protected as an Arduino may be. In fact, static electricity poses a significant threat that may not be so obvious at first because of how well-protected some popular beginner electronics are. Though it is harmless to humans, static electricity can completely destroy electronics. To avoid "frying" the HC-05, it is important to "ground" yourself before touching it. This can be done by touching any large metal object like a doorknob. 
 
 ## Video
+https://github.com/user-attachments/assets/ab84ea79-6710-4bc7-8aa9-7f6bfd0ac4dd
 
 ## Problems and Headaches
 

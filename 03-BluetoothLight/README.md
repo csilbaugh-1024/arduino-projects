@@ -1,7 +1,3 @@
-
-
-https://github.com/user-attachments/assets/cbbd21ab-03ee-4aea-ac46-a8c04f5b3b5f
-
 # Bluetooth Wireless LED
 
 ## Project Goal

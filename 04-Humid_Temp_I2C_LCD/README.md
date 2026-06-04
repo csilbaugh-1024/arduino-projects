@@ -27,19 +27,29 @@ So, the idea of I2C is that multiple different components are connected to the s
 ## Assembling I2C
 The LCD I use in this project does not come with an I2C backpack, so I researched and ordered one that can be attached. However, the backpack came with its own set of breakout pins already soldered to it. So, my first step is to de-solder one of the components' set of pins. 
 
-![Original LCD](LCD_Original.png)
+Original LCD
 
-![Original I2C Backpack](I2C_Original.png)
+<img width="433" height="287" alt="LCD_Original" src="https://github.com/user-attachments/assets/44aa24a0-c3b6-46df-8895-e9e153c2ec7e" />
+
+Original I2C Backpack
+
+<img width="332" height="357" alt="I2C_Original" src="https://github.com/user-attachments/assets/5abf2580-c1e7-462d-95ae-51032b2bd529" />
 
 Initially, I planned on de-soldering the pins on the I2C backpack so that I could attach it to the LCD's set of pins. However, I switched my approach and decided to de-solder the pins on the LCD because the connections were larger, which makes them easier to remove. So, the new plan is to attach the pinless LCD to the set of pins on the backpack.
 
-![De-soldered LCD](LCD_Desoldered.png)
+De-soldered LCD
+
+<img width="406" height="307" alt="LCD_Desoldered" src="https://github.com/user-attachments/assets/235bda26-72c2-4175-8e45-86631b76b3f4" />
 
 Now that the I2C backpack has been soldered to the LCD, I am ready to build the device.
 
-![Successful Attachment Photo 1](FullSystem0.png)
+Successful Attachment Photo 1
 
-![Successful Attachment Photo 2](FullSystem1.png)
+<img width="697" height="467" alt="FullSystem0" src="https://github.com/user-attachments/assets/295b453b-aa50-4850-a214-08b863da34e4" />
+
+Successful Attachment Photo 2
+
+<img width="777" height="595" alt="FullSystem1" src="https://github.com/user-attachments/assets/00f12ad7-b2eb-4846-980c-0ffb1af3d169" />
 
 ## Wiring
 
@@ -68,7 +78,7 @@ I tested this system in two phases. First, I connected power and verified that t
 
 ## Video
 
-[ Insert Video Here ]
+https://github.com/user-attachments/assets/be1ef180-5cab-4150-afd1-f3b905b726f9
 
 ## Problems and Headaches
 This project came with a few obstacles. First, acquiring the I2C backpack did not go as smoothly as expected. After I initially ordered two I2C backpacks, my university residence hall lost the package. So, I ordered more to a pickup location, and this went smoothly. When I began de-soldering, I initially tried removing the set of pins from the I2C backpack, but they got stuck at a "halfway out" point in the board. I suspect this was because I de-soldered the pins badly and caused some solder to remain that was too small to be removed with a tool but still substantial enough to keep at least one of the pins attached to the board. De-soldering the LCD after this, however, went very smoothly. Also, I completely fried my first DHT11 sensor by mistakenly wiring it in reverse polarity. Fortunately, I was able to borrow my friend's DHT11 sensor and complete the project.

@@ -10,3 +10,4 @@ The circuit will be connected to a 3.3v power supply that will be switched on fo
 
 ## Circuits Aspect
 
+<img width="604" height="402" alt="Screenshot 2026-07-06 223931" src="https://github.com/user-attachments/assets/c21d27fc-902b-4f61-ac55-65200876826e" />

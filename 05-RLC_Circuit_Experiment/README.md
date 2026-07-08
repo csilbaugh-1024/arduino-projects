@@ -30,44 +30,28 @@ One of the interesting characteristics of an RLC circuit is the interaction betw
 The main equations that describe this behavior are:
 
 * Inductor voltage-current relationship:
-  \[
-v(t) = L\frac{di(t)}{dt}
-\]
+  $v(t)=L\frac{di(t)}{dt}$
 
 * Capacitor current-voltage relationship:
-  \[
-i(t) = C\frac{dv(t)}{dt}
-\]
+  $i(t)=C\frac{dv(t)}{dt}$
 
 * DC Steady State Capacitor Charge:
-  \[
-Q = CV
-\]
+  $Q=CV$
 
 To study the capacitor's charging behavior, it must begin with zero stored charge, or equivalently, zero voltage across its terminals. Since a fully energized inductor has approximately zero voltage across it when shorted in DC steady state, placing the capacitor in parallel with the inductor guarantees that the capacitor also has zero initial voltage. This observation follows from the fact that elements connected in parallel share the same voltage.
 
-The circuit was therefore designed so that the switch first connects the inductor to the power supply and allows it to reach DC steady state. During this time, the capacitor remains in parallel with the inductor, giving the known initial condition of \[
-V_C(0^-) = 0\,\mathrm{V}
-\].
+The circuit was therefore designed so that the switch first connects the inductor to the power supply and allows it to reach DC steady state. During this time, the capacitor remains in parallel with the inductor, giving the known initial condition of $V_C(0^-)=0\,\mathrm{V}$
+.
 
 The second initial condition is the inductor current immediately before switching. Because the inductor behaves as a short circuit in DC steady state, the steady-state current can be found using Ohm's Law. The current is determined by the supply voltage divided by the total series resistance, which consists of the 100 (\Omega) resistor and the inductor's 27.6 (\Omega) DC winding resistance:
-
-\[
-I_L(0^-) = \frac{3.3\,\mathrm{V}}{100\,\Omega + 27.6\,\Omega}
-\approx 25.9\,\mathrm{mA}
-\]
+$I_L(0^-)=\frac{3.3\,\mathrm{V}}{100\,\Omega+27.6\,\Omega}\approx25.9\,\mathrm{mA}$
+.
 
 When the switch changes position, the power supply is disconnected and the inductor begins transferring its stored potential energy to the capacitor. Because the current through an inductor and the voltage across a capacitor cannot change instantaneously, the initial conditions immediately after switching are
-
-\[
-I_L(0^+) = I_L(0^-)
-\]
-
+$I_L(0^+)=I_L(0^-)$
 and
-
-\[
-V_C(0^+) = V_C(0^-)
-\]
+$V_C(0^+)=V_C(0^-)$
+.
 
 These conditions provide the known initial values needed to solve the differential equation describing the capacitor's charging behavior.
 

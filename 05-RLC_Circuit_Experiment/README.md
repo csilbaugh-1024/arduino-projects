@@ -43,7 +43,7 @@ To study the capacitor's charging behavior, it must begin with zero stored charg
 The circuit was therefore designed so that the switch first connects the inductor to the power supply and allows it to reach DC steady state. During this time, the capacitor remains in parallel with the inductor, giving the known initial condition of $V_C(0^-)=0\,\mathrm{V}$
 .
 
-The second initial condition is the inductor current immediately before switching. Because the inductor behaves as a short circuit in DC steady state, the steady-state current can be found using Ohm's Law. The current is determined by the supply voltage divided by the total series resistance, which consists of the 100 (\Omega) resistor and the inductor's 27.6 (\Omega) DC winding resistance:
+The second initial condition is the inductor current immediately before switching. Because the inductor behaves as a short circuit in DC steady state, the steady-state current can be found using Ohm's Law. The current is determined by the supply voltage divided by the total series resistance, which consists of the 100 $\Omega$ resistor and the inductor's 27.6 $\Omega$ DC winding resistance:
 $I_L(0^-)=\frac{3.3\,\mathrm{V}}{100\,\Omega+27.6\,\Omega}\approx25.9\,\mathrm{mA}$
 .
 

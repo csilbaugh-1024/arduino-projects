@@ -23,7 +23,18 @@ Where a and b are negative.
 Because this is a second order differential equation, the general solution will contain two unknown constants. To find these constants and identify a particular solution, there must be known initial conditions for charge, Q(t), and current, Q'(t).
 
 ## Circuit Description
+The main focus for the circuit setup was to find a way to study the charging behavior of a capacitor. However, for finding the differential equation, two unknown constants were included, which consist of the initial charge and current through the capacitor. 
 
+Now, what's interesting about an RLC circuit is the behavior with inductors and capacitors when switches are involved. For inductors, current increases until the component reaches a DC steady state in which it is treated as a short circuit. And so, a short circuit does not have any voltage drop. For capacitors, charge increases, which increases the voltage across the capacitor until it reaches its maximum potential energy to store charge. 
+
+The main equations to support this include:
+ +
+ +
+ +
+
+To study the charging relationship of the capacitor, it must start with no charge, or in other words, no voltage difference. As discussed earlier, when an inductor fully charges, it shortens, which means that there is no voltage difference across it. Intuitively thinking about how voltage is equal across parallel branches helped us come up with the idea of having the capacitor be in parallel with the inductor. So, when the switch turns on and charges the inductor fully, there will be a known voltage/charge of 0 across the capacitor, and also a known initial current from the charged inductor. To find the initial current of the inductor, Ohm's law can be used since the inductor is shorted in DC steady state after a while of charging. This results in the current when fully charged being equal to 3.3V divided by the 100 Ohms from the resistor in series with the power supply module. 
+
+Once the switch opens, the capacitor begins to charge up from the initial current of the charged inductor as $I_L(0^+) = $I_L(0^-) and also $V_C(0^+) = $V_C(0^-).
 ## Hardware and Safety
 
 ## Circuit Diagram

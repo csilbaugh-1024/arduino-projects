@@ -70,23 +70,24 @@ Where a and b are negative.
 Because this is a second order differential equation, the general solution will contain two unknown constants. To find these constants and identify a particular solution, there must be known initial conditions for charge, Q(t), and current, Q'(t).
 
 ### Charging Phase
-During the charging phase, when the switch is closed, the circuit is not a true series RLC circuit. So, the standard RLC equation alone is not sufficient to find an expression for the charge on the capacitor. Instead, the charge on the capacitor must be found with a system of first-order linear ordinary differential equations because it is dependent on the current through the inductor parallel to it. This system is constructed with circuit loop analysis. Following the physical layout of the circuit, the smaller loop is called loop A and includes the power source, the pushbutton, the inductor, and the 100Ω resistor. Also, the inductor has 27.6Ω of resistance which must be included in the equation. Loop A's equation looks like this:
+During the charging phase, when the switch is closed, the circuit is not a true series RLC circuit. So, the standard RLC equation alone is not sufficient to find an expression for the charge on the capacitor. Instead, the charge on the capacitor must be found with a system of first-order linear ordinary differential equations because it is dependent on the current through the inductor parallel to it. This system is constructed with circuit loop analysis. Following the physical layout of the circuit, the smaller loop is called Loop A and includes the power source, the pushbutton, the inductor, and the $100,\Omega$ resistor. Also, the inductor has $27.6,\Omega$ of resistance which must be included in the equation. Loop A's equation looks like this:
 
-$3.3-L\(frac{di_L(t)}{dt})-(R_i\i_L)-100\(i_L+(frac{dQ(t)}{dt}))$
+$3.3 - L\frac{di_L(t)}{dt} - R_i i_L(t) - 100\left(i_L(t) + \frac{dQ(t)}{dt}\right) = 0$
 
-This equation can then be solved for $(frac{di_L(t)}{dt})$, the derivative of the current through the inductor as a function of time.
+This equation can then be solved for $\frac{di_L(t)}{dt}$, the derivative of the current through the inductor as a function of time.
 
-$(frac{di_L(t)}{dt})=-12760\i_L-10000\(frac{dQ(t)}{dt})+330$
+$\frac{di_L(t)}{dt} = -12760,i_L(t) - 10000,\frac{dQ(t)}{dt} + 330$
 
-Next, loop B consists of the power source, the pushbutton, the 10Ω resistor, the 5000uF capacitor, and the 100Ω resistor. This is the equation for loop B:
+Next, Loop B consists of the power source, the pushbutton, the $10,\Omega$ resistor, the $5000,\mu\text{F}$ capacitor, and the $100,\Omega$ resistor. This is the equation for Loop B:
 
-$3.3-10\(frac{dQ(t)}{dt})-200\Q-100\(i_L+(frac{dQ(t)}{dt}))$
+$3.3 - 10\frac{dQ(t)}{dt} - 200Q(t) - 100\left(i_L(t) + \frac{dQ(t)}{dt}\right) = 0$
 
-This equation is then solved for the current through the capacitor, which is equivalent to the derivative of the charge on the capacitor, $(frac{dQ(t)}{dt})$.
+This equation is then solved for the current through the capacitor, which is equivalent to the derivative of the charge on the capacitor, $\frac{dQ(t)}{dt}$.
 
-$(frac{dQ(t)}{dt})=(frac{-100}{110})\i_L-(frac{200}{110})\Q+0.03$
+$\frac{dQ(t)}{dt} = -\frac{100}{110}i_L(t) - \frac{200}{110}Q(t) + 0.03$
 
-This equation can then be plugged into the equation for $(frac{di_L(t)}{dt})$ to make it an equation in terms of only $i_L$ and $Q$.
+This equation can then be plugged into the equation for $\frac{di_L(t)}{dt}$ to make it an equation in terms of only $i_L(t)$ and $Q(t)$.
+
 
 ## Hardware and Safety
 

@@ -60,8 +60,9 @@ $V_C(0^+)=V_C(0^-)$
 These conditions provide the known initial values needed to solve the differential equation describing the capacitor's charging behavior.
 
 ## Circuit Diagram
+*Designed within KiCad*
 
-<img width="512" height="327" alt="Screenshot 2026-07-07 212614" src="https://github.com/user-attachments/assets/0c8a21ec-43bb-4f77-8b5f-205440e85862" />
+<img width="659" height="356" alt="Screenshot 2026-07-08 235401" src="https://github.com/user-attachments/assets/6d6affd7-02c5-4f6e-ae36-3e8197a5cdea" />
 
 ## Hardware and Safety
 

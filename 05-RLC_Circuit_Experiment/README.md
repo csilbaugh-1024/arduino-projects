@@ -150,8 +150,9 @@ During testing, the circuit was connected to the power source and the pushbutton
 <img width="384" height="288" alt="ChargeOverCapacitor" src="https://github.com/user-attachments/assets/7203237c-90e5-450a-a9bd-162c13381faf" />
 <img width="384" height="288" alt="Voltage_Across_Capacitor" src="https://github.com/user-attachments/assets/4634bdd8-0d01-4ea3-8873-8d499dc5136f" />
 
-The graphs illustrate that the capacitor reached its peak charge of roughly 0.004 coulombs and peak voltage of roughly 0.8 volts after around 2.5 seconds of charging. Then, it took nearly one second to fully discharge after the switch was opened. Both curves, that of the charging phase and the discharging phase, appear to be exponential.
+The graphs illustrate that the capacitor reached its peak charge of roughly 0.004 coulombs and peak voltage of roughly 0.8 volts after around 1 second of charging. Then, it took nearly one second to fully discharge after the switch was opened. Both curves, that of the charging phase and the discharging phase, appear to be exponential.
 
 ## Conclusions
-Our test results supported our derived and calculated equation except for a few slight differences likely caused by the resistors' tolerance, the resistor connected to the Arduino UNO that increases the read voltage, stray capacitance within the breadboard, and even leakage resistance within the physical capacitor. 
+After testing and data collection finished, the experimental graphs for charging and discharging agreed quite well with the predictive equations. However, the match was not perfect. Although both the expected and observed curves behaved exponentially, the former predicted a maximum charge of 3.55 mC, while the latter reached roughly 4.0 mC at its maximum. These differences were likely caused by the resistors' tolerance, the 10k resistor connected to the Arduino UNO that increases the read voltage, stray capacitance within the breadboard, breadboard and component quality, and even leakage or resistance within the physical capacitor. This experiment was not conducted in an ideal lab environment, so it is reasonable to expect error. Overall, however, this was a very successful experiment because we successfully predicted the capacitor's behavior quite accurately.
+
 ## What Did I learn? (Cam)

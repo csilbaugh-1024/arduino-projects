@@ -94,7 +94,7 @@ Where a and b are negative.
 Because this is a second order differential equation, the general solution will contain two unknown constants. To find these constants and identify a particular solution, there must be known initial conditions for charge, Q(t), and current, Q'(t).
 
 ### Charging Phase
-During the charging phase, when the switch is closed, the circuit is not a true series RLC circuit. So, the standard RLC equation alone is not sufficient to find an expression for the charge on the capacitor. Instead, the charge on the capacitor must be found with a system of first-order linear ordinary differential equations because its derivative is dependent on the current through the inductor parallel to it. This system is constructed with circuit loop analysis. Following the physical layout of the circuit, the smaller loop is called Loop A and includes the power source, the pushbutton, the inductor, and the $100,\Omega$ resistor. Also, the inductor has $27.6,\Omega$ of resistance which must be included in the equation. Loop A's equation looks like this:
+During the charging phase, when the switch is closed, the circuit is not a true series RLC circuit. So, the standard RLC equation alone is not sufficient to find an expression for the charge on the capacitor. Instead, the charge on the capacitor must be found with a system of first-order linear ordinary differential equations because its derivative is dependent on the current through the inductor parallel to it. This system is constructed with circuit loop analysis. Following the physical layout of the circuit, the smaller loop is called Loop A and includes the power source, the pushbutton, the inductor, and the $100\,\Omega$ resistor. Also, the inductor has $27.6\,\Omega$ of resistance which must be included in the equation. Loop A's equation looks like this:
 
 $3.3 - L\frac{di_L(t)}{dt} - R_L i_L(t) - 100\left(i_L(t) + \frac{dQ(t)}{dt}\right) = 0$
 
@@ -102,7 +102,7 @@ This equation can then be solved for $\frac{di_L(t)}{dt}$, the derivative of the
 
 $\frac{di_L(t)}{dt} = -12760 i_L(t) - 10000\frac{dQ(t)}{dt} + 330$
 
-Next, Loop B consists of the power source, the pushbutton, the $10,\Omega$ resistor, the $5000,\mu\text{F}$ capacitor, and the $100,\Omega$ resistor. This is the equation for Loop B:
+Next, Loop B consists of the power source, the pushbutton, the $10\,\Omega$ resistor, the $5000\,\mu\text{F}$ capacitor, and the $100\,\Omega$ resistor. This is the equation for Loop B:
 
 $3.3 - 10\frac{dQ(t)}{dt} - 200Q(t) - 100\left(i_L(t) + \frac{dQ(t)}{dt}\right) = 0$
 
@@ -116,15 +116,15 @@ $\frac{di_L(t)}{dt} = -3669 i_L(t) + 18182Q(t) +30$
 
 These two first order linear ordinary differential equations each have the same two dependent variables, so they form a system. Though the exact tactics for solving this system for Q(t) are beyond the scope of this report, its general form is:
 
-$Q(t) = 19.4c_1\,\mathrm{e}^{-6.5t} + c_2\,\mathrm{e}^{-3664.5t} + 0.00355$
+$Q(t) = 19.4c_1\mathrm{e}^{-6.5t} + c_2\mathrm{e}^{-3664.5t} + 0.00355$
 
 This equation represents an overdamped circuit. However, out of the two initial conditions, only one represents charge, but this equation has two unknown constants. Fortunately, the equation for current on the inductor has the same unknown constants, so they can be found using a system of the two equations. The general solution for current on the inductor as a function of time is:
 
-$i_L(t) = 100c_1\,\mathrm{e}^{-6.5t} + 4040c_2\,\mathrm{e}^{-3664.5t} + 0.0264$
+$i_L(t) = 100c_1\mathrm{e}^{-6.5t} + 4040c_2\mathrm{e}^{-3664.5t} + 0.0264$
 
 With the initial conditions, $Q(0)=0$ and $i_L(0)=0$ applied and the resulting system solved for $c_1$ and $c_2$, the equation for charge on the capacitor during charging looks like this:
 
-$Q(t) = -0.00355\,\mathrm{e}^{-6.5t} + 0.00355$
+$Q(t) = -0.00355\mathrm{e}^{-6.5t} + 0.00355$
 
 Surprisingly, the general form for this equation matches that of an overdamped circuit, but the particular form now matches none of the four possible cases. This is initially surprising, but it makes sense after considering the exponential terms in the general form. One term has e raised to the power of -6.5 multiplied by t, while the other exponential term uses -3664.5 instead. So, the second term exponentially decays insanely faster than the first one, and this happens so quickly that its influence is negligible in the solved form of the equation. And, $c_2$ becomes negligible, incredibly close to zero. So, the equation behaves as an RC circuit despite the inductor's being parallel to the capacitor. From a circuits perspective, the inductor has a negligible effect on the form of the capacitor's charging equation. Though unexpected, this equation makes perfect sense.
 
@@ -135,15 +135,15 @@ $0.01Q''+37.6Q'+200Q=0$
 
 The general form of the equation solved for Q(t) is:
 
-$Q(t) = c_1\,\mathrm{e}^{-5.5t} + c_2\,\mathrm{e}^{-3754.5t}$
+$Q(t) = c_1\mathrm{e}^{-5.5t} + c_2\mathrm{e}^{-3754.5t}$
 
-Because the two curves for charging and discharging form a continuous curve and the discharging process begins at the known time t=3 when the switch is opened, we can use $Q(3)$ and $Q'(3)$ as initial conditions for discharging. Those conditions are:
+The two curves for charging and discharging form a continuous curve, and the discharging process begins at the known time t=3 when the switch is opened. So, since charge and current cannot instantaneously change, we can use $Q(3)$ and $Q'(3)$ as initial conditions for discharging. Those conditions are:
 
 $Q(3)=0.00355$, $Q'(3)=0$
 
 The solved form of the capacitor's discharging is:
 
-$Q(t) = 0.00355\,\mathrm{e}^{-5.5t}$
+$Q(t) = 0.00355\mathrm{e}^{-5.5t}$
 
 In this equation, time t represents the time elapsed since discharging began, not the time elapsed since charging began. Again, the influence of the inductor is negligible on the form of this equation, so it resembles that of an RC circuit. Interestingly, though, the number in the exponent has changed from -6.5 to -5.5. This is likely due to the inductor's influence and the fact that the current now flows in a single loop rather than two loops in the charging phase.
 

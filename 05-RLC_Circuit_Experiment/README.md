@@ -153,5 +153,5 @@ During testing, the circuit was connected to the power source and the pushbutton
 The graphs illustrate that the capacitor reached its peak charge of roughly 0.004 coulombs and peak voltage of roughly 0.8 volts after around 2.5 seconds of charging. Then, it took nearly one second to fully discharge after the switch was opened. Both curves, that of the charging phase and the discharging phase, appear to be exponential.
 
 ## Conclusions
-
+Our test results supported our derived and calculated equation except for a few slight differences likely caused by the resistors' tolerance, the resistor connected to the Arduino UNO that increases the read voltage, stray capacitance within the breadboard, and even leakage resistance within the physical capacitor. 
 ## What Did I learn? (Cam)

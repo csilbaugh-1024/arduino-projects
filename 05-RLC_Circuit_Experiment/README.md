@@ -29,7 +29,7 @@ The main equations that describe this behavior are:
 * DC Steady State Capacitor Charge:
   $Q=CV$
 
-## Discharging
+## Discharging:
 To study the capacitor's discharging behavior, it must begin with the maximum potential stored charge, or voltage across its terminals. Since a fully energized inductor will be shorted in DC steady state, placing the capacitor in parallel with the inductor guarantees that the capacitor will stop charging when the inductor reaches this moment. The circuit was therefore designed so that the switch connects the inductor to the power supply in parallel and allows it to reach DC steady state. Since charge tends to flow along the path of least resistance, a short circuit completely cuts off current flow through the capacitor. Since the time constant of the inductor is equal to $\tau_L=\frac{L}{R}$ in an RL circuit, and $\tau_C=RC$ in an RC circuit, our chosen circuit strategically places the two loops as an RC and RL circuit. With the chosen values, the Inductor looks to charge more quickly to its DC steady state of >5 $\tau$, than the capacitor. This means that the Capacitor does not fully reach its maximum charge by the time the inductor acts as a short circuit. However, what's great about the capacitor is that it stores charge for later use, so it maintains a constant voltage. Once the inductor is shorted, a voltage divider equation can be used to find the voltage of the partially charged capacitor using the 100$\Omega$ resistor and the resistance of the winding copper wire. 
 
 The second initial condition is the inductor current immediately before switching. Because the inductor behaves as a short circuit in DC steady state, the steady-state current can be found using Ohm's Law. The current is determined by the supply voltage divided by the total series resistance, which consists of the 100 $\Omega$ resistor and the inductor's 27.6 $\Omega$ DC winding resistance:
@@ -39,9 +39,9 @@ When the switch changes position, the power supply is disconnected and the disch
 $I_L(0^+)=I_L(0^-)$
 and
 $V_C(0^+)=V_C(0^-)$.
-
-### Note to gavin: I changed "charging behavior" to "discharging behavior". If that's correct, just delete this and disregard please
 These conditions provide the known initial values needed to solve the differential equation describing the capacitor's discharging behavior.
+
+## Charging:
 
 ## Circuit Diagram
 *Designed within KiCad*

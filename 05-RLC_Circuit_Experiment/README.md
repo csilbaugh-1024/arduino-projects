@@ -29,7 +29,7 @@ The main equations that describe this behavior are:
 * DC Steady State Capacitor Charge:
   $Q=CV$
 
-## Discharging:
+### Discharging:
 To study the capacitor's discharging behavior, it must begin with the maximum stored charge, or voltage across its terminals. Since a fully energized inductor will be ideally shorted in DC steady state except for some realistic resistance within the winding copper wire, placing the capacitor in parallel with the inductor guarantees that the capacitor will stop charging when the inductor reaches this moment. The circuit was therefore designed for both energy sources to be connected by a common node for both of them to reach their DC steady state. When these components are connected in parallel, we have found that they generally approach their DC steady state at around the same time of >5 $\tau$. However, what's great about the capacitor is that it stores charge for later use when disconnected, as the dielectric acts as an insulator, so it maintains a constant voltage. Once the inductor is shorted, a voltage divider equation can be used to find the voltage of the fully charged capacitor using the 100$\Omega$ resistor and the resistance of the winding copper wire. 
 
 $$
@@ -55,7 +55,7 @@ and
 $V_C(0^+)=V_C(0^-)$.
 These conditions provide the known initial values needed to solve the differential equation describing the capacitor's discharging behavior.
 
-## Charging:
+### Charging:
 From the instant that the switch was closed, the capacitor and the inductor began to charge. For the second-order differential equation of a charging capacitor within an overdamped circuit, the initial charge of the capacitor and current through the inductor are still needed. As mentioned before that $I_L(0^+)=I_L(0^-)$
 and
 $V_C(0^+)=V_C(0^-)$, the initial current of the inductor right before and right after the switch is closed must be equal to 0 mA. Also, as we learned earlier, capacitors have a dielectric that acts as an insulator, allowing them to hold charge. This supports the idea that the voltage right before is equal to the voltage right after the switch is closed. Assuming the capacitor is fully discharged to nearly 0 V, there will be an initial charge on the capacitor of nearly 0 C as well. 

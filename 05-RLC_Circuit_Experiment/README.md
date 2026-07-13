@@ -9,7 +9,7 @@ A series RLC circuit combines a resistor, R, an inductor, L, and a capacitor, C.
 ## Circuit Description
 
 ### Physical Layout
-This circuit was designed so that the capacitor can discharge in a closed RLC circuit. First, the switch is closed to charge the capacitor, and it is then opened for discharging. Consequently, the circuit is made up of two loops. The first and smaller loop was labelled loop A, and, going from the positive terminal of the power source to the negative, it includes a pushbutton to act as a switch, the inductor, a 100Ω resistor, and the negative terminal of the battery. The second loop, loop B, begins with the positive terminal of the power source, followed by the pushbutton, then the 10Ω resistor, then the 5000uF capacitor, the 100Ω resistor, then, finally, the negative terminal. Unfortunately, the inductor is not an ideal inductor as it has 27.6Ω of resistance.
+This circuit was designed so that the capacitor can discharge in a closed RLC circuit. First, the switch is closed to charge the capacitor, and it is then opened for discharging. Consequently, the circuit is made up of three loops. The first and smaller loop was labelled loop A, and, going from the positive terminal of the power source to the negative, it includes a pushbutton to act as a switch, the inductor, a 100Ω resistor, and the negative terminal of the battery. The second loop, loop B, begins with the inductor, followed by the 10Ω resistor, then, finally, the 5000uF capacitor. The final loop, loop C, consists of the loop that covers all components on the outside except for the inductor. Unfortunately, the inductor is not an ideal inductor as it has 27.6Ω of resistance.
 
 ![alt_text](Circuit.jpg)
 
